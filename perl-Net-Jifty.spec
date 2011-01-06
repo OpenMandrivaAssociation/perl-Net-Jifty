@@ -15,6 +15,7 @@ BuildRequires: perl(Any::Moose)
 BuildRequires: perl(Cwd)
 BuildRequires: perl(DateTime)
 BuildRequires: perl(Email::Address)
+BuildRequires: perl(Encode) >= 2.410.0
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Hash::Merge)
 BuildRequires: perl(LWP::UserAgent)
