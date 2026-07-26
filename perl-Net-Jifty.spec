@@ -1,15 +1,13 @@
 %define upstream_name    Net-Jifty
-%define upstream_version 0.14
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.14
+Release:	6
 
 Summary:	Interface to online Jifty applications
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Net-Jifty
-Source0:	https://cpan.metacpan.org/authors/id/S/SA/SARTAK/Net-Jifty-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SA/SARTAK/Net-Jifty-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -43,7 +41,7 @@ config file for the username and password (or SID) of the user. If neither
 is available, it will prompt the user for them.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
